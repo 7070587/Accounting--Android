@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/activity_main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true"
+	tools:context=".MainActivity">
+
+	<android.support.design.widget.AppBarLayout
+		android:id="@+id/app_bar_layout"
+		app:elevation="0dp"
+		android:orientation="vertical"
+		android:layout_width="wrap_content"
+		android:layout_height="120dp"
+		android:background="#3CB371">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<RelativeLayout
+				android:id="@+id/amount_layout"
+				android:layout_width="match_parent"
+				android:layout_height="80dp">
+
+				<com.robinhood.ticker.TickerView
+					android:id="@+id/amount_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:paddingTop="20dp"
+					android:textColor="#FFFFFF"
+					android:textSize="50sp"/>
+
+				<TextView
+					android:id="@+id/currency_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="bottom"
+					android:text=" $"
+					android:layout_alignTop="@id/amount_text"
+					android:layout_toRightOf="@id/amount_text"
+					android:layout_toEndOf="@id/amount_text"
+					android:layout_marginRight="30dp"
+					android:layout_marginTop="30dp"
+					android:textSize="30sp"
+					android:textColor="#FFFFFF"
+					/>
+
+			</RelativeLayout>
+
+			<TextView
+				android:id="@+id/date_text"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#C1FFC1"
+				android:text="DEC 11"
+				android:layout_below="@id/amount_layout"
+				android:layout_centerHorizontal="true"
+				android:textStyle="bold"
+				android:textSize="16sp"
+				android:layout_marginTop="10dp"
+				/>
+
+		</RelativeLayout>
+
+	</android.support.design.widget.AppBarLayout>
+
+	<include layout="@layout/content_main"/>
+
+	<android.support.design.widget.FloatingActionButton
+		android:id="@+id/fab"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_anchor="@id/app_bar_layout"
+		app:layout_anchorGravity="bottom|end"
+		android:layout_margin="16dp"
+		android:src="@drawable/icon_add_white"
+		/>
+	
+</android.support.design.widget.CoordinatorLayout>

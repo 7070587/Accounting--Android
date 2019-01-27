@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<TextView
+			android:id="@+id/day_text"
+			android:layout_width="match_parent"
+			android:layout_height="35dp"
+			android:background="#5E5E5E"
+			android:gravity="center_vertical"
+			android:paddingLeft="16dp"
+			android:text="DEC 11"
+			android:textColor="#F5FFFA"
+			android:textSize="16sp"
+			android:textStyle="bold" />
+
+		<ListView
+			android:id="@+id/listView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@id/day_text">
+
+		</ListView>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/no_record_layout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="No Record for today!!"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:textSize="20sp"
+			/>
+
+	</RelativeLayout>
+
+</FrameLayout>

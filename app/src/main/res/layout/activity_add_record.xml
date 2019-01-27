@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".AddRecordActivity">
+
+	<LinearLayout
+		android:id="@+id/linearLayout"
+		android:layout_width="match_parent"
+		android:layout_height="240dp"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="0.25"
+			>
+
+			<TableLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="#FFFFFF">
+
+
+				<TableRow
+					android:layout_weight="10">
+
+					<Button
+						android:id="@+id/keyboard_seven"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:text="7"
+						android:background="#FFFFFF"
+						android:textSize="18sp"
+						/>
+
+					<Button
+						android:id="@+id/keyboard_eight"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:text="8"
+						android:background="#FFFFFF"
+						android:textSize="18sp"
+						/>
+
+					<Button
+						android:id="@+id/keyboard_nine"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:text="9"
+						android:background="#FFFFFF"
+						android:textSize="18sp"
+						/>
+
+				</TableRow>
+
+				<TableRow
+					android:layout_weight="10">
+
+					<Button
+						android:id="@+id/keyboard_four"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:text="4"
+						android:background="#FFFFFF"
+						android:textSize="18sp"
+						/>
+
+					<Button
+						android:id="@+id/keyboard_five"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:text="5"
+						android:background="#FFFFFF"
+						android:textSize="18sp"
+						/>
+
+					<Button
+						android:id="@+id/keyboard_six"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:text="6"
+						android:background="#FFFFFF"
+						android:textSize="18sp"
+						/>
+
+				</TableRow>
+
+				<TableRow
+					android:layout_weight="10">
+
+					<Button
+						android:id="@+id/keyboard_one"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:text="1"
+						android:background="#FFFFFF"
+						android:textSize="18sp"
+						/>
+
+					<Button
+						android:id="@+id/keyboard_two"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:text="2"
+						android:background="#FFFFFF"
+						android:textSize="18sp"
+						/>
+
+					<Button
+						android:id="@+id/keyboard_three"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:text="3"
+						android:background="#FFFFFF"
+						android:textSize="18sp"
+						/>
+
+				</TableRow>
+
+				<TableRow
+					android:layout_weight="10">
+
+					<Button
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:background="#FFFFFF"
+						android:textSize="18sp"
+						/>
+
+					<Button
+						android:id="@+id/keyboard_zero"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:text="0"
+						android:background="#FFFFFF"
+						android:textSize="18sp"
+						/>
+
+					<Button
+						android:id="@+id/keyboard_dot"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_weight="1"
+						android:text="."
+						android:background="#FFFFFF"
+						android:textSize="20sp"
+						/>
+
+				</TableRow>
+
+			</TableLayout>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="0.75"
+			>
+
+			<LinearLayout
+				android:background="#FFFFFF"
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+				<ImageButton
+					android:id="@+id/keyboard_type"
+					android:src="@drawable/icon_budget"
+					android:background="#FFFFFF"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="2"
+					/>
+
+				<ImageButton
+					android:id="@+id/keyboard_backspace"
+					android:src="@drawable/icon_backspace"
+					android:background="#FFFFFF"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					/>
+
+				<ImageButton
+					android:id="@+id/keyboard_done"
+					android:src="@drawable/icon_check"
+					android:background="#FFFFFF"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					/>
+
+			</LinearLayout>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+	<RelativeLayout
+		android:background="#B0E2FF"
+		android:layout_above="@id/linearLayout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		
+		<TextView
+			android:id="@+id/textView_amount"
+			android:paddingBottom="5dp"
+			android:textColor="#00008B"
+			android:textSize="45sp"
+			android:gravity="center"
+			android:text="0.00"
+			android:layout_width="match_parent"
+			android:layout_height="80dp" />
+		
+		<EditText
+			android:id="@+id/editText"
+			android:textColor="#191970"
+			android:textSize="20sp"
+			android:text="book"
+			android:paddingLeft="10dp"
+			android:layout_margin="5dp"
+			android:layout_below="@id/textView_amount"
+			android:background="@drawable/bg_edit_text"
+			android:layout_width="match_parent"
+			android:layout_height="40dp" />
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/recyclerView"
+			android:layout_margin="8dp"
+			android:layout_below="@id/editText"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+		
+	</RelativeLayout>
+
+</RelativeLayout>
